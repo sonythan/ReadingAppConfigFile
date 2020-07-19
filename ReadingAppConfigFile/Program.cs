@@ -14,7 +14,7 @@ namespace ReadingAppConfigFile
         {
             ReadAllAppSettings();
             ReadAllConnectionStrings();
-          
+
             /*
             ReadSetting("Setting1");
             ReadSetting("NotValid");
@@ -22,7 +22,7 @@ namespace ReadingAppConfigFile
             AddUpdateAppSettings("Setting1", "May 8, 2020");
             ReadAllSettings();*/
 
-            System.Console.WriteLine("Adding For Branch1")
+            System.Console.WriteLine("Adding For Branch1");
             System.Console.ReadKey();
         }
 
