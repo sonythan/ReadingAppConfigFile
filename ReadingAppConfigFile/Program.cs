@@ -22,7 +22,8 @@ namespace ReadingAppConfigFile
             AddUpdateAppSettings("Setting1", "May 8, 2020");
             ReadAllSettings();*/
 
-            System.Console.WriteLine("Adding For Branch1");
+            System.Console.WriteLine("Addition Branch 1");
+            System.Console.WriteLine("Addition Branch 2")
             System.Console.ReadKey();
         }
 
