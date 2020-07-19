@@ -22,6 +22,7 @@ namespace ReadingAppConfigFile
             AddUpdateAppSettings("Setting1", "May 8, 2020");
             ReadAllSettings();*/
 
+            System.Console.WriteLine("Adding Master Branch")
             System.Console.ReadKey();
         }
 
