@@ -12,16 +12,35 @@ namespace ReadingAppConfigFile
     {
         static void Main(string[] args)
         {
-            ReadAllSettings();
+            ReadAllAppSettings();
+            ReadAllConnectionStrings();
+          
+            /*
             ReadSetting("Setting1");
             ReadSetting("NotValid");
             AddUpdateAppSettings("NewSetting", "May 7, 2014");
             AddUpdateAppSettings("Setting1", "May 8, 2020");
-            ReadAllSettings();
+            ReadAllSettings();*/
+
             System.Console.ReadKey();
         }
 
-        static void ReadAllSettings()
+        static void ReadAllConnectionStrings()
+        {
+            try
+            {
+                string connectionStrings = ConfigurationManager.ConnectionStrings["Database1"].ProviderName;
+                Console.WriteLine(connectionStrings);
+                string valueconnectionStrings = ConfigurationManager.ConnectionStrings["Database1"].ConnectionString;
+                Console.WriteLine(valueconnectionStrings);
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error reading app settings");
+            }
+        }
+
+        static void ReadAllAppSettings()
         {
             try
             {
