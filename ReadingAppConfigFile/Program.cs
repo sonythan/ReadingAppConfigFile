@@ -23,7 +23,7 @@ namespace ReadingAppConfigFile
             ReadAllSettings();*/
 
             System.Console.WriteLine("Addition Branch 1");
-            System.Console.WriteLine("Addition Branch 2")
+            System.Console.WriteLine("Addition Branch 2");
             System.Console.ReadKey();
         }
 
