@@ -12,42 +12,7 @@ namespace ReadingAppConfigFile
     {
         static void Main(string[] args)
         {
-            ReadAllAppSettings();
-            ReadAllConnectionStrings();
 
-            /*
-            ReadSetting("Setting1");
-            ReadSetting("NotValid");
-            AddUpdateAppSettings("NewSetting", "May 7, 2014");
-            AddUpdateAppSettings("Setting1", "May 8, 2020");
-            ReadAllSettings();*/
-
-            System.Console.WriteLine("Addition on Master");
-            System.Console.WriteLine("Addition Branch 1");
-            System.Console.WriteLine("Addition Branch 2");
-            System.Console.WriteLine("Another Addition for Branch 2");
-            System.Console.WriteLine("Addition Branch 3");
-            System.Console.WriteLine("Addition Branch 4");
-            System.Console.WriteLine("Another addition from Branch 4");
-            System.Console.WriteLine("Addition Branch 5");
-            System.Console.WriteLine("Addition from Master");
-            System.Console.ReadKey();
-        }
-
-        static void ReadAllConnectionStrings()
-        {
-            try
-            {
-                string connectionStrings = ConfigurationManager.ConnectionStrings["Database1"].ProviderName;
-                Console.WriteLine(connectionStrings);
-                string valueconnectionStrings = ConfigurationManager.ConnectionStrings["Database1"].ConnectionString;
-                Console.WriteLine(valueconnectionStrings);
-            }
-            catch (ConfigurationErrorsException)
-            {
-                Console.WriteLine("Error reading app settings");
-            }
-        }
 
         static void ReadAllAppSettings()
         {
