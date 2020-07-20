@@ -24,6 +24,7 @@ namespace ReadingAppConfigFile
 
             System.Console.WriteLine("Addition Branch 1");
             System.Console.WriteLine("Addition Branch 2");
+            System.Console.WriteLine("Another Addition for Branch 2");
             System.Console.ReadKey();
         }
 
