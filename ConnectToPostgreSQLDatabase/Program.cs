@@ -33,6 +33,7 @@ namespace ConnectToPostgreSQLDatabase
                 Console.WriteLine("{0} , {1} ", ItemList.GetString(0), ItemList.GetString(1));
             }
             Console.ReadKey();
+            DBConnection.Close();
 
             string ReadDBConnectionString()
             {
